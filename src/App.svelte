@@ -72,7 +72,9 @@
 		{:else}
 		<h3 class="bg-warning mt-4 p-3">Tu resultado se mostrará aquí</h3>
 		{/if}
-
+		<footer class="text-center">
+			<p>Sebastian Rodriguez ©</p>
+		</footer>
 	</main>
 	
 	<style>
