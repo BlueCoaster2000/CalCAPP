@@ -25,7 +25,7 @@
 			caloriasSubir = caloriasMantener+300;
 		}
 		mostrarResultado = true;
-		alert(actividad)
+		
 	}
 }
 </script>
