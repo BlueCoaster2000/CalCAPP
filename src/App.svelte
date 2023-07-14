@@ -31,10 +31,12 @@
 </script>
 
 <main>
-	<h1 style="color:#0E6EFD;font-weight:bolder;" class="text-center">CalCAPP</h1>
-	<p class="h2">Introduce tu peso (KG)</p><input type="number" bind:value={peso}>
-	<p class="h2">Introduce tu edad</p><input type="number" name="" id="">
-	<p class="h2">Introduce tu sexo</p>
+	<p class="h1" style="color:#0E6EFD; text-transform:uppercase;">CalCAPP</p>
+	<div>
+
+		<p class="h2">Introduce tu peso (KG)</p><input type="number" bind:value={peso}>
+		<p class="h2">Introduce tu edad</p><input type="number" name="" id="">
+		<p class="h2">Introduce tu sexo</p>
 	<select bind:value={sexoSelect} on:change={handleChange}>
 		<option value="">Seleccione...</option>
 		<option value="Hombre">Hombre</option>
@@ -50,8 +52,9 @@
 		<p>Profesional(2/Día)</p><input type="radio" bind:group={actividad} name="nivelAct" id="">
 	</div>
 	<button on:click={calcular} class="btn btn-secondary">Terminar</button>
-
-
+</div>
+	
+	
 	{#if mostrarResultado}
 		<div class="bg-primary">
 			<h3>Calorías Diarias para mantenerte en tu peso</h3>
